@@ -1,0 +1,81 @@
+root {
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    
+    --body-font-size: 15px;
+    --font: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca);
+    --font-weights: 400;
+    
+    --another-font: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display);
+    --another-weights: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desktop Styles */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: var(--body-font-size);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* background: var(--bright-orange); */
+}
+
+section {
+}
+
+section:nth-child(2) {
+
+}
+
+section:nth-child(3) {
+
+}
+
+img {
+    width: 50px;
+}
+
+button {
+    width: 150px;
+    padding: 8px;
+    border-radius: 20mm;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        /* gap: 1em; */
+    }
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(228, 45%, 44%); 
+}
